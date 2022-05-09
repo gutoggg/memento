@@ -7,6 +7,12 @@
 	--color-6:#1D4044;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap');
+
+body {
+	font-family: 'Gowun Dodum', sans-serif;
+}
+
 .page-wrapper {
     width: 100%;
     background-color: #fff;

@@ -6,7 +6,9 @@ function PostContainer(props) {
         <div className="post-container-box">
             <div className="content-wrapper">
                <div className='post-container-content'>
-                 <Post/>   
+                 <Post/> 
+                 <Post/>  
+                 <Post/>    
                </div>
             </div>
         </div>

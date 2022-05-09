@@ -8,7 +8,7 @@ function Carousel() {
     return (
         <div className="carousel-box">
             <div className="content-wrapper">
-                <CarouselModel className="storie-box" duration={1000} adaptiveHeight={false} arrows={false} arrowsBlock={false} initialSlide={true} slidesToShow={5} wheel={true} wheelScroll={2}>
+                <CarouselModel className="storie-box" duration={1000} adaptiveHeight={false} arrows={false} arrowsBlock={false} initialSlide={1} slidesToShow={5} wheel={true} wheelScroll={2}>
                     <StorieButton image={imageTest} alt={"Foto de perfil"} />
                     <StorieButton image={imageTest} alt={"Foto de perfil"} />
                     <StorieButton image={imageTest} alt={"Foto de perfil"} />
