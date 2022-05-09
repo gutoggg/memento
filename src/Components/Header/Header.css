@@ -1,0 +1,14 @@
+.header-box {
+    width: 100%;
+    background-color: var(--color-5);
+    height: 3.125rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-box .content-wrapper {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}

@@ -1,0 +1,18 @@
+:root{
+	--color-1:#F6FFFD;
+	--color-2:#E9FFFB;
+	--color-3:#B2F5EA;
+	--color-4:#38B2AC;
+	--color-5:#319795;
+	--color-6:#1D4044;
+}
+
+.page-wrapper {
+    width: 100%;
+    background-color: #fff;
+}
+
+.content-wrapper {
+	width: 100%;
+	padding: 0 20px;
+}

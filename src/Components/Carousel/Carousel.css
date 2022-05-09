@@ -1,0 +1,18 @@
+.carousel-box {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.carousel-box .content-wrapper {
+    width: 100%;
+    max-width: 320px;
+}
+
+#storie-button {
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    border: solid 2px  var(--color-3);
+}
