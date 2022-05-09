@@ -9,13 +9,13 @@ function Carousel() {
         <div className="carousel-box">
             <div className="content-wrapper">
                 <CarouselModel className="storie-box" duration={1000} adaptiveHeight={false} arrows={false} arrowsBlock={false} initialSlide={true} slidesToShow={5} wheel={true} wheelScroll={2}>
-                    <StorieButton image={imageTest} />
-                    <StorieButton image={imageTest} />
-                    <StorieButton image={imageTest} />
-                    <StorieButton image={imageTest} />
-                    <StorieButton image={imageTest} />
-                    <StorieButton image={imageTest} />
-                    <StorieButton image={imageTest} />
+                    <StorieButton image={imageTest} alt={"Foto de perfil"} />
+                    <StorieButton image={imageTest} alt={"Foto de perfil"} />
+                    <StorieButton image={imageTest} alt={"Foto de perfil"} />
+                    <StorieButton image={imageTest} alt={"Foto de perfil"} />
+                    <StorieButton image={imageTest} alt={"Foto de perfil"} />
+                    <StorieButton image={imageTest} alt={"Foto de perfil"} />
+                    <StorieButton image={imageTest} alt={"Foto de perfil"} />
                 </CarouselModel>
             </div>
         </div>
