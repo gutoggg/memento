@@ -4,7 +4,9 @@
 	--color-3:#B2F5EA;
 	--color-4:#38B2AC;
 	--color-5:#319795;
-	--color-6:#1D4044;
+	--color-6:#1d4044;
+	--color-overlay:rgba(29, 64, 68, 0.8);
+
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap');
@@ -21,4 +23,31 @@ body {
 .content-wrapper {
 	width: 100%;
 	padding: 0 20px;
+	z-index: 0;
 }
+
+.Modal {
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: space-between;
+	margin:7.5% auto;
+	width: 70%;
+	height: 85%;
+	max-height:400px;
+	background-color: var(--color-1);
+	border-radius: 15px;
+	padding: 20px;
+}
+
+.Modal:focus{
+	outline: none;
+}
+
+.Overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--color-overlay);
+  }
