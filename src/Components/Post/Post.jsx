@@ -9,6 +9,7 @@ import sendIcon from '../../images/send.png'
 import React, {useState} from 'react'
 
 function Post(props) {
+
     const [heartState, setHeartIcon] = useState(heartIcon);
 
     function heartHandler() {
@@ -36,12 +37,13 @@ function Post(props) {
             <div className="post-wrapper">
                 <div className='post-header'>
                     <div className='post-image-button'>
-                        <img className='post-image-button-photo' src={imageTest} alt="" />
+                        {props.profilePicture}
                     </div>
-                    <p>Furdinand</p>
+                    <p>{props.profileName}</p>
                 </div>
                 <div className='post-image'>
-                    <img className='post-image-button-photo' src={imageTest} alt="" />
+                    {props.photo}
+                    
                 </div>
                 <div className='post-footer'>
                     <div className='post-footer-icons'>
@@ -53,7 +55,7 @@ function Post(props) {
                         
                     </div>
                     <div className='post-footer-title'>
-                        <p className="post-title" >Baita dia esse!</p>
+                        <p className="post-title" >{props.title}</p>
                     </div>
                     <div className='post-footer-comment'>
                         <input className='post-comment-input' type="text" placeholder='Adicionar comentário' />

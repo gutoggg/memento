@@ -7,11 +7,13 @@ import PostContainer from './Components/PostContainer/PostContainer'
 import Footer from './Components/Footer/Footer'
 
 function App() {
+  const postContainer = React.useRef()
+
   return (
     <div className="page-wrapper">
-        <Header/> 
+        <Header postContainer={postContainer}/> 
         <Carousel/>  
-        <PostContainer/>
+        <PostContainer  referencia={postContainer}/>
         <Footer/>
     </div>
   );

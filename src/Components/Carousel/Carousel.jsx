@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import CarouselModel from 'infinite-react-carousel';
 import StorieButton from '../StorieButton/StorieButton'
 import './Carousel.css'
