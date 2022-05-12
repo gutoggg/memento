@@ -3,7 +3,7 @@
     width: 15vw;
     max-width: 50px;
     max-height: 50px;
-    border-radius: 50px;
+    border-radius: 100%;
     border: solid 2px  var(--color-3);
     overflow: hidden;
 }
