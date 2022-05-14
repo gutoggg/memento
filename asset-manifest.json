@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/memento/static/css/main.68781e65.css",
+    "main.js": "/memento/static/js/main.cdd4023b.js",
+    "static/media/heart.png": "/memento/static/media/heart.19cb5ae7ff0c055ecf45.png",
+    "static/media/send.png": "/memento/static/media/send.e289b9b3b3f1237caaec.png",
+    "static/media/bookmark.png": "/memento/static/media/bookmark.4960e8b5f553f322284e.png",
+    "static/media/heart-filled.png": "/memento/static/media/heart-filled.07021d80c80287768b66.png",
+    "static/media/bookmark-filled.png": "/memento/static/media/bookmark-filled.3a651e2346fe70bc9a03.png",
+    "static/media/picture.png": "/memento/static/media/picture.90ab969a33aa6381c0c7.png",
+    "static/media/person.png": "/memento/static/media/person.598fcc9226630a92e295.png",
+    "static/media/share.png": "/memento/static/media/share.b870dee1f75f9fb5630c.png",
+    "static/media/logo-inverse.svg": "/memento/static/media/logo-inverse.4c31fb9b6494287139d8682df7675315.svg",
+    "static/media/logo.svg": "/memento/static/media/logo.6d9ccd9b2f829074d47d509a00cb430f.svg",
+    "index.html": "/memento/index.html",
+    "static/media/add-button.svg": "/memento/static/media/add-button.3e12abf03823831c6e6575c8f26ddbb5.svg",
+    "main.68781e65.css.map": "/memento/static/css/main.68781e65.css.map",
+    "main.cdd4023b.js.map": "/memento/static/js/main.cdd4023b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.68781e65.css",
+    "static/js/main.cdd4023b.js"
+  ]
+}
