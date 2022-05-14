@@ -1,68 +1,54 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<div align="center"><img src="https://user-images.githubusercontent.com/72248716/168440379-fa088906-0350-45d2-a123-c5d4cc2b9f1a.png"></img></div>
 
-## Available Scripts
+### ⚙️ Tecnologias
 
-In the project directory, you can run:
+[![Javascript Badge](https://img.shields.io/badge/JavaScript-F7DF1E?style=&logo=javascript&logoColor=black&link=https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)
+[![HTML Badge](https://img.shields.io/badge/HTML5-E34F26?style=&logo=html5&logoColor=white&link=https://developer.mozilla.org/pt-BR/docs/orphaned/Web/Guide/HTML/HTML5/)](https://developer.mozilla.org/pt-BR/docs/orphaned/Web/Guide/HTML/HTML5/)
+[![CSS Badge](https://img.shields.io/badge/CSS3-1572B6?style=&logo=css3&logoColor=white&link=https://developer.mozilla.org/pt-BR/docs/Web/CSS)](https://developer.mozilla.org/pt-BR/docs/Web/CSS)
+[![React Badge](https://img.shields.io/badge/React-20232A?style=&logo=react&logoColor=61DAFB&link=https://reactjs.org/)](https://reactjs.org/)
+  
+### 🚀 Motivação
 
-### `npm start`
+Este desafio foi proposto pela [Alê](https://github.com/alexa2me), minha mentora no programa [Desenvolve 2022](https://desenvolve.grupoboticario.com.br/) como meio para exercitar os conceitos aprendidos de React até o momento.
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### 🛠️ Deploy
+ <a href="https://gutoggg.github.io/memento/" > Clique aqui para visualizar a página </a>
+ 
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+### 📋 Sobre o desafio
 
-### `npm test`
+O desafio consiste em criar uma página web utilizando React. Parece simples, mas existem algumas exigências para o funcionamento da página. São elas:
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. Header, contendo:
+    - **Nome** do seu projeto
+    - Botão para **adicionar** uma nova postagem no seu perfil
+        - Quando eu clicar no botão, quero que um **modal** apareça, ele deve conter:
+            - Um campo para eu adicionar o meu **avatar** (url)
+            - Um campo para eu adicionar o meu **nome** de usuário
+            - Um campo para eu adicionar a **foto** (url) da minha postagem
+        - Quando eu clicar em **postar**, quero ver o meu novo posto no meu feed.
+    - Após adicionar uma nova postagem, quero que um **toast** apareça confirmando que a postagem foi realizada com sucesso.
 
-### `npm run build`
+2. Carousel na homepage com pelo menos 5 avatars de **outros usuários**
+    - Quando eu clicar em um avatar, quero ser redirecionada para a página desse usuário, contendo:
+        - **Avatar** do usuário em tamanho maior
+        - **Nome**
+        - **Número** de publicações, seguidores e seguindo
+        - **Bio**
+        - **Seis publicações** (cards só com imagem)
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+3. Três **publicações** contendo **avatar**, **nome** do usuário, **foto**, **ícones** de **curtir**, **compartilhar**, **salvar** e ****campo para **comentar** com botão para **publicar**.
+    - Os ícones são brancos.
+    - Quando eu clicar no ícone **curtir**, quero que o coração se torne vermelho.
+    - Quando o ícone de **curtir** estiver vermelho e eu clicar novamente, quero que ele volte a se tornar branco.
+    - Quando eu clicar no campo **comentar**, quero poder digitar uma mensagem.
+        - Após escrever a mensagem, quando eu clicar em **publicar**, quero ver a minha mensagem logo abaixo do campo para escrever um comentário.
+    - Quando eu clicar no ícone **compartilhar**, quero que um **modal** apareça com um campo para que eu informe o nome do usuário com quem eu gostaria de compartilhar a publicação e um botão para enviar.
+        - Quando eu clicar no botão **enviar**, quero que apareça um **toast** informando que a ação foi concluída com sucesso.
+    - Quando eu clicar no ícone **salvar**, quero que a cor do ícone mude para preto.
+    - Quando o ícone de **salvar** estiver preto e eu clicar novamente, quero que a cor mude para branco.
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+4. Footer (não precisa de redes sociais porque o seu projeto já é uma rede social).
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
