@@ -37,6 +37,10 @@
     max-width: 320px;
 }
 
+.post-modal-title-input {
+    width: 100%;
+}
+
 .post-modal-photo-box {
     width: 100%;
     height: 50%;

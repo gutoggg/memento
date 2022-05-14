@@ -1,32 +1,35 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import {
-  BrowserRouter,
-  Routes,
-  Route,
-} from "react-router-dom";
+import React from 'react'
+import ReactDOM from 'react-dom'
+import {BrowserRouter, Routes, Route} from "react-router-dom"
+import StorieButton from './Components/StorieButton/StorieButton'
 import Home from './Routes/Home/Home'
 import Profile from './Routes/Profile/Profile'
-import { LoremPicsum } from 'react-lorem-picsum'
+import dolor from 'dolor'
 
-let posts = [
-  {
-    profilePicture: <LoremPicsum className='post-image-button-photo' width={1024} random />,
-    profileName: 'gutoggg',
-    photo: <LoremPicsum className='post-image-button-photo' width={1024} random />,
-    title: 'Teste'
+const postQuantity = 2
+let posts = []
+
+for (let i = 0; i < postQuantity; i++) {
+
+  let randomUsername = dolor.words(1)+'_'+dolor.words(1)
+
+  let postTemplate = {
+    profilePicture:<StorieButton link={`/profile`} linkState={{profilePicture: `https://picsum.photos/1024?random=${Math.random()}`, profileName: randomUsername}} alt={"Foto de perfil"} />,
+    profileName: randomUsername ,
+    photo: <img className='post-image-button-photo' src={`https://picsum.photos/1024?random=${Math.random()}`} />,
+    title: dolor.words(4)
   }
-]
+
+  posts.push(postTemplate)
+}
+
 
 function App(props) {
   const [statePosts, setstatePosts] = React.useState(posts)
   return (
-    < BrowserRouter >
       <Routes >
         <Route path="/" element={<Home statePosts={statePosts} setstatePosts={setstatePosts} />} />
-        <Route path="profile/:profileId/:teste" element={<Profile statePosts={statePosts} setstatePosts={setstatePosts} />} />
-        <Route path="profile/:profileId" element={<Profile />} />
-        <Route path="/profile" element={<Home statePosts={statePosts} setstatePosts={setstatePosts} />} />
+        <Route path="/profile" element={<Profile/>} />
         <Route
           path="*"
           element={
@@ -36,12 +39,13 @@ function App(props) {
           }
         />
       </Routes>
-    </BrowserRouter >
   )
 }
 
 ReactDOM.render(
-  <App />
+  < BrowserRouter >
+    <App />
+  </BrowserRouter>
   ,
   document.getElementById('root')
 );

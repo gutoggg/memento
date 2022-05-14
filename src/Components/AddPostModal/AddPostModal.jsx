@@ -3,8 +3,10 @@ import { styled } from '@mui/material/styles'
 import React from 'react'
 import personIcon from '../../images/person.png'
 import pictureIcon from '../../images/picture.png'
-import { Box, Stack, Button, Modal, Avatar, IconButton } from '@mui/material';
+import { Box, Stack, Button, Modal, Avatar, IconButton } from '@mui/material'
 import TextField from '@mui/material/TextField'
+import StorieButton from '../StorieButton/StorieButton'
+
 
 const Input = styled('input')({
     display: 'none',
@@ -29,7 +31,7 @@ function AddPostModal(props) {
 
     function onPostHandle() {
         props.addPost({
-            profilePicture: <img className='post-image-button-photo' alt={selectedProfileImage.name} src={imageProfileUrl} />,
+            profilePicture: <StorieButton link={`/profile`} linkState={{ profilePicture: imageProfileUrl, profileName: modalProfileName }} image={`https://picsum.photos/1024?random=${Math.random()}`} alt={"Foto de perfil"} />,
             profileName: modalProfileName,
             photo: <img className='post-image-button-photo' alt={selectedPostImage.name} src={imagePostUrl} />,
             title: modalTitle
@@ -72,17 +74,18 @@ function AddPostModal(props) {
                     </label>
                 </Box>
                 <Box className='post-modal-title'>
-                    <TextField value={modalTitle} className='post-modal-header-input' label="Título" size="small" margin='none' onChange={(e) => {
+                    <TextField value={modalTitle} className='post-modal-title-input' label="Título" size="small" margin='none' onChange={(e) => {
                         setModalTitle(e.target.value)
                     }} />
                 </Box >
                 <Box className='post-modal-buttons'>
                     <Stack justifyContent="space-between" direction="row" >
-                        <Button onClick={onCloseHandle} variant="contained" color="error">
-                            cancel
+                        <Button onClick={(e) => {props.setOpenCancel(true); onCloseHandle(e)}} variant="contained" color="error">
+                            cancelar
                         </Button>
-                        <Button onClick={onPostHandle} variant="contained" color="success">
-                            post
+                        
+                        <Button onClick={ (e) =>{props.setOpenSuccess(true); onPostHandle(e)} } variant="contained" color="success">
+                            postar
                         </Button>
                     </Stack>
                 </Box>

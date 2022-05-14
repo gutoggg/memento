@@ -2,6 +2,7 @@ import './PostContainer.css'
 import Post from '../Post/Post'
 import React from 'react';
 
+
 function PostContainer(props) {
     return (
         <div className="post-container-box">
