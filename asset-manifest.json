@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/memento/static/css/main.68781e65.css",
-    "main.js": "/memento/static/js/main.cdd4023b.js",
+    "main.css": "/memento/static/css/main.615a8507.css",
+    "main.js": "/memento/static/js/main.648564f1.js",
     "static/media/heart.png": "/memento/static/media/heart.19cb5ae7ff0c055ecf45.png",
     "static/media/send.png": "/memento/static/media/send.e289b9b3b3f1237caaec.png",
     "static/media/bookmark.png": "/memento/static/media/bookmark.4960e8b5f553f322284e.png",
@@ -14,11 +14,11 @@
     "static/media/logo.svg": "/memento/static/media/logo.6d9ccd9b2f829074d47d509a00cb430f.svg",
     "index.html": "/memento/index.html",
     "static/media/add-button.svg": "/memento/static/media/add-button.3e12abf03823831c6e6575c8f26ddbb5.svg",
-    "main.68781e65.css.map": "/memento/static/css/main.68781e65.css.map",
-    "main.cdd4023b.js.map": "/memento/static/js/main.cdd4023b.js.map"
+    "main.615a8507.css.map": "/memento/static/css/main.615a8507.css.map",
+    "main.648564f1.js.map": "/memento/static/js/main.648564f1.js.map"
   },
   "entrypoints": [
-    "static/css/main.68781e65.css",
-    "static/js/main.cdd4023b.js"
+    "static/css/main.615a8507.css",
+    "static/js/main.648564f1.js"
   ]
 }
