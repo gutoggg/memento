@@ -7,7 +7,6 @@ import { Box, Stack, Button, Modal, Avatar, IconButton } from '@mui/material'
 import TextField from '@mui/material/TextField'
 import StorieButton from '../StorieButton/StorieButton'
 
-
 const Input = styled('input')({
     display: 'none',
 });

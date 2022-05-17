@@ -6,7 +6,7 @@ import Home from './Routes/Home/Home'
 import Profile from './Routes/Profile/Profile'
 import dolor from 'dolor'
 
-const postQuantity = 2
+const postQuantity = 12
 let posts = []
 
 for (let i = 0; i < postQuantity; i++) {
@@ -43,7 +43,7 @@ function App(props) {
 }
 
 ReactDOM.render(
-  < BrowserRouter >
+  < BrowserRouter basename={process.env.PUBLIC_URL}>
     <App />
   </BrowserRouter>
   ,
