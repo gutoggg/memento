@@ -16,9 +16,14 @@ function Post(props) {
     const [heartState, setHeartIcon] = useState(heartIcon)
     const [bookmarkState, setBookmarkIcon] = useState(bookmarkIcon)
 
-    function addComment(e){
+    function addComment(e) {
         const newComment = commentField.current.value
-        let newComments = commentState.concat([newComment])
+        const newCommentPhoto = `https://picsum.photos/1024?random=${Math.random()}`
+        const newCommentObject = {
+            Comment: newComment,
+            Picture: newCommentPhoto
+        }
+        let newComments = commentState.concat([newCommentObject])
         commentField.current.value = ""
         setCommentState(newComments)
     }
@@ -65,12 +70,13 @@ function Post(props) {
                         <img onClick={addComment} className='post-footer-icon' src={sendIcon} alt="" />
                     </div>
                     <div className='post-comments'>
-                        {commentState.map((value, index) => {
-                            return <Box key={index} sx={{display:'flex', flexFlow: 'row nowrap', alignItems: 'center'}}>
-                                <StorieButton style={{maxHeight:'25px', maxWidth:'25px', margin: '.25rem'}} link={`/profile`} linkState={{profilePicture: `https://picsum.photos/1024?random=${Math.random()}`, profileName: dolor.words(1)}} alt={"Foto de perfil"} />
-                                <p className='post-comment' >{value}</p>
-                            </Box>})}
-                    </div>  
+                        {commentState.map((commentObject, index) => {
+                            return <Box key={index} sx={{ display: 'flex', flexFlow: 'row nowrap', alignItems: 'center' }}>
+                                <StorieButton style={{ maxHeight: '25px', maxWidth: '25px', margin: '.25rem' }} link={`/profile`} linkState={{ profilePicture: commentObject.Picture, profileName: dolor.words(1) }} alt={"Foto de perfil"} />
+                                <p className='post-comment' >{commentObject.Comment}</p>
+                            </Box>
+                        })}
+                    </div>
                 </div>
             </div>
         </div>
